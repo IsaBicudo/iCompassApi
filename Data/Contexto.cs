@@ -10,10 +10,12 @@ namespace Api.Data
 
         }
 
+        public DbSet<UsuarioModel> Usuario { get; set; }
         public DbSet<PostagemModel> Postagem { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.ApplyConfiguration(new UsuarioMap());
             modelBuilder.ApplyConfiguration(new PostagemMap());
             base.OnModelCreating(modelBuilder);
         }
