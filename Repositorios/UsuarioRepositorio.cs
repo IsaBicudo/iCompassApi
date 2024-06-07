@@ -10,6 +10,7 @@ namespace Api.Repositorios
         private readonly Contexto _dbContext;
 
         // TESTE COMMIT
+        // TESTE COMMIT ISABELLA S2
         public UsuarioRepositorio(Contexto dbContext)
         {
             _dbContext = dbContext;
