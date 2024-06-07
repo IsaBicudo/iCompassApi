@@ -9,6 +9,7 @@ namespace Api.Repositorios
     {
         private readonly Contexto _dbContext;
 
+        // TESTE COMMIT
         public UsuarioRepositorio(Contexto dbContext)
         {
             _dbContext = dbContext;
