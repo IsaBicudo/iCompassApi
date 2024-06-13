@@ -11,6 +11,7 @@ namespace Api.Data
         }
 
         public DbSet<UsuarioModel> Usuario { get; set; }
+        public DbSet<PostagemModel> Postagem { get; set; }
 
         public DbSet<DadosInfluencerModel> DadosInfluencer { get; set; }
 
@@ -18,6 +19,7 @@ namespace Api.Data
         {
             modelBuilder.ApplyConfiguration(new UsuarioMap());
             modelBuilder.ApplyConfiguration(new DadosInfluencerMap());
+            modelBuilder.ApplyConfiguration(new PostagemMap());
             base.OnModelCreating(modelBuilder);
         }
 
