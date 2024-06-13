@@ -12,7 +12,6 @@ namespace Api.Data
 
         public DbSet<UsuarioModel> Usuario { get; set; }
         public DbSet<PostagemModel> Postagem { get; set; }
-
         public DbSet<DadosInfluencerModel> DadosInfluencer { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
