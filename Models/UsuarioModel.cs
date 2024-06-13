@@ -29,7 +29,7 @@
         public string BiografiaUsuario { get; set; } = string.Empty;
 
         public string FotoUsuario { get; set; } = string.Empty;
-        public int DadosInfluencerId { get; internal set; }
+        public int DadosInfluencerId { get; set; }
 
         public static implicit operator List<object>(UsuarioModel v)
         {
