@@ -9,8 +9,6 @@ namespace Api.Repositorios
     {
         private readonly Contexto _dbContext;
 
-        // TESTE COMMIT
-        // TESTE COMMIT ISABELLA S2
         public UsuarioRepositorio(Contexto dbContext)
         {
             _dbContext = dbContext;
@@ -53,6 +51,8 @@ namespace Api.Repositorios
                 usuarios.EmailUsuario = usuario.EmailUsuario;
                 usuarios.SenhaUsuario = usuario.SenhaUsuario;
                 usuarios.ConfirmarSenhaUsuario = usuario.ConfirmarSenhaUsuario;
+                usuarios.BiografiaUsuario = usuario.BiografiaUsuario;
+                usuarios.FotoUsuario = usuario.FotoUsuario;
                 _dbContext.Usuario.Update(usuarios);
                 await _dbContext.SaveChangesAsync();
             }

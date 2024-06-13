@@ -20,6 +20,8 @@ namespace Api.Data
             builder.Property(x => x.EmailUsuario).IsRequired().HasMaxLength(255);
             builder.Property(x => x.SenhaUsuario).IsRequired().HasMaxLength(255);
             builder.Property(x => x.ConfirmarSenhaUsuario).IsRequired().HasMaxLength(255);
+            builder.Property(x => x.BiografiaUsuario).IsRequired().HasMaxLength(255);
+            builder.Property(x => x.FotoUsuario).IsRequired().HasMaxLength(255);
         }
     }
 }

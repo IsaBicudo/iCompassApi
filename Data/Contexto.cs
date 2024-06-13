@@ -12,9 +12,12 @@ namespace Api.Data
 
         public DbSet<UsuarioModel> Usuario { get; set; }
 
+        public DbSet<DadosInfluencerModel> DadosInfluencer { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new UsuarioMap());
+            modelBuilder.ApplyConfiguration(new DadosInfluencerMap());
             base.OnModelCreating(modelBuilder);
         }
 
