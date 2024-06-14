@@ -41,14 +41,14 @@ namespace Api.Repositorios
             }
             else
             {
-                posts.UsuarioId = posts.UsuarioId;
-                posts.TipoRedeSocialId = posts.TipoRedeSocialId;
-                posts.TipoConteudoId = posts.TipoConteudoId;
-                posts.LikePostagem = posts.LikePostagem;
-                posts.DeslikePostagem = posts.DeslikePostagem;
-                posts.CompartilhamentoPostagem = posts.CompartilhamentoPostagem;
-                posts.SalvosPostagem = posts.SalvosPostagem;
-                posts.QuantidadeComentariosPostagem = posts.QuantidadeComentariosPostagem;
+                posts.UsuarioId = post.UsuarioId;
+                posts.TipoRedeSocialId = post.TipoRedeSocialId;
+                posts.TipoConteudoId = post.TipoConteudoId;
+                posts.LikePostagem = post.LikePostagem;
+                posts.DeslikePostagem = post.DeslikePostagem;
+                posts.CompartilhamentoPostagem = post.CompartilhamentoPostagem;
+                posts.SalvosPostagem = post.SalvosPostagem;
+                posts.QuantidadeComentariosPostagem = post.QuantidadeComentariosPostagem;
                 _dbContext.Postagem.Update(posts);
                 await _dbContext.SaveChangesAsync();
             }
