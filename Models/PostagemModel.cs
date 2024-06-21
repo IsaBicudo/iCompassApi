@@ -20,6 +20,8 @@
 
         public int QuantidadeComentariosPostagem { get; set; }
 
+        public DateTime DataPostagem { get; set; }
+
 
     }
 }

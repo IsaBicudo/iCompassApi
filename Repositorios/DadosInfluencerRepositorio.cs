@@ -40,10 +40,10 @@ namespace Api.Repositorios
             }
             else
             {
-                dadosinfluencer.UsuarioId = dadosinfluencer.UsuarioId;
-                dadosinfluencer.TipoConteudoId = dadosinfluencer.TipoConteudoId;
-                dadosinfluencer.TipoRedeSocialId = dadosinfluencer.TipoRedeSocialId;
-                dadosinfluencer.DadosInfluencerSeguidores = dadosinfluencer.DadosInfluencerSeguidores;
+                dadosinfluencers.UsuarioId = dadosinfluencer.UsuarioId;
+                dadosinfluencers.TipoConteudoId = dadosinfluencer.TipoConteudoId;
+                dadosinfluencers.TipoRedeSocialId = dadosinfluencer.TipoRedeSocialId;
+                dadosinfluencers.DadosInfluencerSeguidores = dadosinfluencer.DadosInfluencerSeguidores;
                 await _dbContext.SaveChangesAsync();
             }
             return dadosinfluencers;
