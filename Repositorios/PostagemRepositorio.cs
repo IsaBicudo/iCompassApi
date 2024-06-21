@@ -49,6 +49,7 @@ namespace Api.Repositorios
                 posts.CompartilhamentoPostagem = post.CompartilhamentoPostagem;
                 posts.SalvosPostagem = post.SalvosPostagem;
                 posts.QuantidadeComentariosPostagem = post.QuantidadeComentariosPostagem;
+                posts.DataPostagem = post.DataPostagem;
                 _dbContext.Postagem.Update(posts);
                 await _dbContext.SaveChangesAsync();
             }

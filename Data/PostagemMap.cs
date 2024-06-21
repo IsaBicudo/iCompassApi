@@ -17,7 +17,7 @@ namespace Api.Data
             builder.Property(x => x.CompartilhamentoPostagem).IsRequired();
             builder.Property(x => x.SalvosPostagem).IsRequired();
             builder.Property(x => x.QuantidadeComentariosPostagem).IsRequired();
-            
+            builder.Property(x => x.DataPostagem).IsRequired();
         }
     }
 }
